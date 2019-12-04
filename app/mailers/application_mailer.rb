@@ -1,4 +1,7 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'from@example.com'
-  layout 'mailer'
+  def contact_mail(contact)
+    @contact = contact
+
+    mail to: "kt10025102@gmail.com", subject: "お問い合わせの確認メール"
+  end
 end
