@@ -21,6 +21,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rails_admin', '~> 2.0'
   gem 'devise'
+  gem 'cancancan'
 end
 
 group :development do
